@@ -27,9 +27,9 @@ install -d $RPM_BUILD_ROOT{%{_datadir}/%{name},%{_bindir}}
 
 cp *.py* *.ui $RPM_BUILD_ROOT%{_datadir}/%{name}
 
-cat > $RPM_BUILD_ROOT%{_bindir}/cmakehelp << EOF
+cat > $RPM_BUILD_ROOT%{_bindir}/cmakehelp << 'EOF'
 cd %{_datadir}/%{name}
-python main.py
+exec %{__python} main.py
 EOF
 
 %clean
