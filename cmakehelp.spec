@@ -1,6 +1,6 @@
 %define	snap	20070917
-Summary:	Qt based interface to cmake help
-Summary(pl.UTF-8):	Oparty na Qt4 interfejs do pomocy cmake
+Summary:	Qt 4 based interface to cmake help
+Summary(pl.UTF-8):	Oparty na Qt 4 interfejs do pomocy cmake
 Name:		cmakehelp
 Version:	0
 Release:	0.%{snap}.1
@@ -14,8 +14,10 @@ Requires:	python-PyQt4
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
+Qt 4 based interface to cmake help.
 
-#%description -l pl.UTF-8
+%description -l pl.UTF-8
+Oparty na Qt 4 interfejs do pomocy cmake.
 
 %prep
 %setup -q -n %{name}
