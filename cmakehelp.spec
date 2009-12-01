@@ -9,6 +9,7 @@ Group:		X11/Applications
 Source0:	http://proli.net/meu/los_otros/%{name}.tar.bz2
 # Source0-md5:	fab9ba5eb40c5c6a65be93fe74e02744
 URL:		http://www.proli.net/2007/09/17/cmake-help/
+BuildRequires:	rpm-pythonprov
 Requires:	cmake
 Requires:	python-PyQt4
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
